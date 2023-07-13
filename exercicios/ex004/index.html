@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seno, cosseno e tangente</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        div.clicar {
+            background-color: #535250;
+            width: 300px;
+            height: 50px;
+            font-size: 1.5em;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button.btn-calcular {
+            width: 140px;
+            height: 50px;
+            font-size: 1.3em;
+            background-color: #535250;
+        }
+
+        p {
+            margin: 20px 10px;
+        }
+
+        #tsen {
+            display: none;
+        }
+
+        #tcos{
+            display: none;
+        }
+        #thip{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Parte do seno -->
+    <h1>Escolha uma opção</h1>
+
+    <div class="clicar" onclick="clickSen()">Clique aqui para calcular o Seno</div>
+
+    <article id="tsen">
+        <p>Digite o valor do cateto oposto:
+            <input type="number" id="sco">
+        </p>
+        <p>Digite o valor da hipotenusa:
+            <input type="number" id="sh">
+        </p>
+
+        <button class="btn-calcular" onclick="calcularSeno()">Calcular</button>
+
+        <p>O resultado do cálculo do seno é: 
+            <span id="rsen"></span>
+        </p>
+    </article> 
+
+    <!--Parte do cosseno-->
+
+    <div class="clicar" onclick="clickCos()">Clique aqui para calcular o Cosseno</div>
+
+    <article id="tcos">
+        <p>Digite o cateto adjacente:
+            <input type="number" id="cca">
+        </p>
+        <p>Digite a hipotenusa:
+            <input type="number" id="ch">
+        </p>
+        <p>O resultado do cálculo do cosseno é: 
+            <span id="rcos"></span>
+        </p>
+        <button class="btn-calcular" onclick="calcularCos()">Calcular</button>
+    </article>
+
+    <!--parte da hipotenusa-->
+    <div class="clicar" onclick="clickHip()">Clique aqui para calcular a Hipotenusa</div>
+
+    <article id="thip">
+        <p>Digite o cateto oposto:
+            <input type="number" id="hco">
+        </p>
+        <p>Digite o cateto adjacente:
+            <input type="number" id="hca">
+        </p>
+        <p>O resultado do cálculo da hipotenusa é: 
+            <span id="rhip"></span>
+        </p>
+        <button class="btn-calcular" onclick="calcularhip()">Calcular</button>
+    </article>
+
+    <script>
+        //parte do seno
+        var tsen = document.getElementById("tsen");
+
+        function clickSen() {
+            if (tsen.style.display == 'block') {
+                tsen.style.display = 'none';
+            } else {
+                tsen.style.display = 'block';
+            }
+        }
+
+        function calcularSeno() {
+            var co = Number(document.getElementById('sco').value);
+            var hip = Number(document.getElementById('sh').value);
+
+            var rsen = (co / hip).toFixed(3);
+
+            document.getElementById('rsen').textContent = rsen;
+        }
+
+        //parte do cosseno
+        var tcos = document.getElementById("tcos");
+
+        function clickCos() {
+            if (tcos.style.display == 'block') {
+                tcos.style.display = 'none';
+            } else {
+                tcos.style.display = 'block';
+            }
+        }
+
+        function calcularCos() {
+
+            var ca = Number(document.getElementById('cca').value);
+            var hip = Number(document.getElementById('ch').value);
+            var rcos = (ca / hip).toFixed(3);
+
+            document.getElementById('rcos').textContent = rcos;
+
+        }
+
+        //parte da hipotenusa
+        var thip = document.getElementById("thip");
+
+        function clickHip() {
+            
+            if (thip.style.display == 'block') {
+                thip.style.display = 'none';
+            } else {
+                thip.style.display = 'block';
+            }
+        }
+
+        function calcularhip() {
+
+            var hica = Number(document.getElementById('hca').value);
+            var hico = Number(document.getElementById('hco').value);
+            var rhip = (hico / hica).toFixed(3);
+            
+            document.getElementById('rhip').textContent = rhip;
+
+        }
+
+        
+    </script>
+</body>
+</html>
