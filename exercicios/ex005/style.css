@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body{
+    background-color: #f9d899;
+    text-align: center;
+}
+
+body>h1{
+    color: #ffffff;
+}
+img#manha{
+    display: none;
+}
+
+img#tarde{
+    display: none;
+}
+
+img#noite{
+    display: none;
+}
+
+div{
+    background-color: #00ffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#manha{
+    display: none;
+    background-image: url(imagens/pexels-simon-berger-1353126.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+div#tarde{
+    display: none;
+    background-image: url(imagens/pexels-bella-white-635279.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+div#noite{
+    display: none;
+    background-image: url(imagens/pexels-pixabay-414144.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+p#escrever{
+    font-size: 1.3em;
+    line-height: 110px;
+}
+
+section#hora{
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+}
