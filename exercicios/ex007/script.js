@@ -4,7 +4,7 @@ function clickCalcular() {
     var inte = Number(document.getElementById('inte').value)
 
 
-    if (inicio == 0 || fim == 0 || inicio == fim || inte > fim, inicio) {
+    if (inicio == 0 || fim == 0 || inicio == fim || inte > fim) {
         document.getElementById('escrever').textContent = ('Insira um valor válido. Os valores não podem ser: iguais ou com intervalo entre eles maiores que o inicio ou fim.')
     }
 
