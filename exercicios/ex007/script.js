@@ -4,8 +4,8 @@ function clickCalcular() {
     var inte = Number(document.getElementById('inte').value)
 
 
-    if (inicio == 0 || fim == 0 || inte == 0) {
-        document.getElementById('escrever').textContent = ('Preencha todos os campos')
+    if (inicio == 0 || fim == 0 || inicio == fim || inte > fim, inicio) {
+        document.getElementById('escrever').textContent = ('Insira um valor válido. Os valores não podem ser: iguais ou com intervalo entre eles maiores que o inicio ou fim.')
     }
 
     else {
