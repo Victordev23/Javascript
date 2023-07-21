@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tabuada</h1>
+    <section id="esp-tab">
+        <p>Digite um valor:
+            <input type="number" id="vlr">
+            <button class="btn-calcular" onclick="clickTabmul()"> Gerar tabuada de multiplicação</button>
+            <button class="btn-calcular" onclick="clickTabsom()">Gerar tabuada de soma</button>
+            <button class="btn-calcular" onclick="clickTabsub()">Gerar tabuada de subtração</button>
+            <button class="btn-calcular" onclick="clickTabdiv()">Gerar tabuada de divisão</button>
+        </p>
+        <select name="tabuada" id="tab" size="10">
+            <option id="esc">Digite um número acima</option>
+        </select>
+        <ul>
+            <li>Para usar digite um número e selecione uma tabuada</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
