@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: #3434c7;
+}
+
+h1{
+    text-align: center;
+}
+
+section#caixa{
+    background-color: #ffffff;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+select#quadro{
+    width: 180px
+}
