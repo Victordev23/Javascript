@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+
+  <div id="Calc">
+    <table>
+      <tr>
+        <td colspan="4">
+          <p id="result"></p>
+        </td>
+      </tr>
+      <tr>
+        <td onclick="addTela('7')">7</td>
+        <td onclick="addTela('8')">8</td>
+        <td onclick="addTela('9')">9</td>
+        <td onclick="addTela('+')">+</td>
+      </tr>
+      <tr>
+        <td onclick="addTela('4')">4</td>
+        <td onclick="addTela('5')">5</td>
+        <td onclick="addTela('6')">6</td>
+        <td onclick="addTela('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="addTela('1')">1</td>
+        <td onclick="addTela('2')">2</td>
+        <td onclick="addTela('3')">3</td>
+        <td onclick="addTela('*')">*</td>
+      </tr>
+      <tr>
+        <td onclick="addTela('0')">0</td>
+        <td onclick="addTela('.')">.</td>
+
+        <td onclick="limparTela()">C</td>
+        <td onclick="addTela('/')">/</td>
+        
+      </tr>
+      <tr>
+          <td onclick="calcular()" colspan="3">=</td>
+          <td onclick="apagar()">⌫</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul> 
+
+  <li>Para a calculadora funcionar basta clicar nos números e montar a expressão desejada</li>
+  <li>Os números digitados não podem ultrapassar 15 dígitos</li>
+  <li>Coloque somente um ponto para números decimais</li>
+  </ul>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+
+
+body{
+
+ background-color:#A9D9D0;
+}
+table{
+    background-color: #027373;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+
+
+td{
+ background-color: #038C7F;
+   padding: 15px;
+}
+
+#result{
+background-color: #ffffff;
+color: #2d2d3a;
+text-align: end;
+
+}
