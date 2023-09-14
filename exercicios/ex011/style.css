@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    background-color: #22BABB;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#divGeral {
+    width: 600px;
+    background-color: #348888;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex; /* Adicionando display flex */
+    flex-direction: column; /* Empilhando verticalmente os elementos filhos */
+}
+
+
+#enviar {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#item {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#adicionar {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    margin: 4px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+li.completed {
+    background-color: #28cf28cc;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  li.inst{
+
+background-color: #22BABB;
+    width: 100px;
+  }
